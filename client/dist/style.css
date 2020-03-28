@@ -6,5 +6,21 @@ body{
 #footer{
   position: absolute;
   bottom: 0;
-  margin-bottom: -400px;
+  margin-bottom: -410px;
+  width: 101%;
+}
+
+.location-modal{
+  height: 140%;
+  width: 105%;
+}
+
+/* Jared's Modals */
+.modal-view-jr{
+  z-index: 30;
+}
+
+/* Nick's Modals */
+.purchase_modal, .read_more_modal, .purchase_modal_detail_box, .modal{
+  z-index: 30;
 }

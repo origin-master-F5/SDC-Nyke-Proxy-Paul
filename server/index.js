@@ -1,10 +1,12 @@
 var express  = require('express');
-var app = express();
+let morgan = require('morgan');
 var httpProxy = require('http-proxy');
 var apiProxy = httpProxy.createProxyServer();
 const path = require('path');
+var app = express();
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
+// app.use(morgan('dev'));
 
 var serverOne = 'http://localhost:3001';
     // serverTwo = 'http://localhost:3002',
